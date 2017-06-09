@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      {block:Description}
+      <meta name="description" content="{MetaDescription}" />
+      {/block:Description} {block:Hidden}
+      {/block:Hidden}
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="{Favicon}" />
+      <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+      <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+      <link rel="stylesheet" href="http://static.tumblr.com/hnxe2tp/MSropdifo/bootstrap.min.css" />
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-86342777-1', 'auto');
+         ga('send', 'pageview');
+
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+            $('.soundcloud_audio_player').each(function(){
+                $(this).attr({ src: $(this).attr('src'), height: '300px', width: '100%' });
+            });
+      });
+
+       $(document).ready(function(){
+          if(window.location.href.indexOf("about") > -1) {
+         $('.nav-item:first-child a').text('Home').attr('href', 'https://betweenourselvespod.tumblr.com');
+         }
+      });
+      </script>
+      <style>
+         body{
+         font-family: 'Montserrat', sans-serif;
+         font-size: 14px;
+         }
+         body > iframe:first-child, body > iframe:nth-child(2) {display:none;}
+         .tmblr-iframe-pushdown{
+         padding-top: 0 !important;
+         }
+         .app-cta-button{
+         display:none;
+         }
+         /*Typography */
+         p{
+         font-size: 1.125em;
+         }
+         a {
+         color: #000000;
+         text-decoration: none;
+         border-bottom: 3px solid  #F27904;
+         }
+         a:hover, a:focus {
+         color: #000000;
+         text-decoration: none;
+         border-color: transparent;
+         transition: border  0.4s ease;
+         }
+         /* Site  navigation */
+         .site-nav {
+         text-align: center;
+         }
+         @media (min-width: 768px){
+         .site-nav {
+         text-align: right;
+         }
+         }
+         .site-nav .nav-list {
+         padding: 0;
+         margin: 0;
+         }
+         .site-nav .nav-item {
+         list-style-type: none;
+         display: inline-block;
+         margin: 0 0.5em;
+         font-weight: 600;
+         text-transform: uppercase;
+         font-size: 1.125em;
+         }
+         @media (min-width: 768px){
+         .site-nav .nav-item{
+         font-size: 1.3em;
+         }
+         }
+         /* Site sections */
+         .site-header{
+         padding: 20px;
+         }
+         .site-about{
+         background-image:url('http://static.tumblr.com/hnxe2tp/ItUoqvh84/sekai-profile-picture__1_.jpg') ;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         padding: 100px 0;
+         }
+         @media (min-width: 768px){
+         .site-about{
+         padding: 140px 0;
+         }
+         }
+         .intro h1{
+         font-size: 1.8em;
+         line-height: 1.3em;
+         margin: 0;
+         }
+         @media (min-width: 768px){
+         .intro h1{
+         font-size: 2.6em;
+         }
+         }
+         .blog-description{
+         font-size: 1.125em;
+         margin: 0;
+         }
+         @media (min-width: 768px){
+         .blog-description{
+         font-size: 1.8em;
+         }
+         }
+         .site-content{
+         padding-top: 60px;
+         padding-bottom: 60px;
+         }
+         .site-article{
+         padding-bottom: 20px;
+         }
+         .site-footer{
+         background-color: #222424;
+         padding: 50px 0;
+         color: #ffffff;
+         font-size: 1em;
+         }
+         .site-footer p{
+         font-size: 1.1em;
+         }
+         .site-footer h3{
+         text-transform: uppercase;
+         font-size: 1.15em;
+         }
+         .site-footer a{
+         border-bottom: 2px solid  #F27904;
+         color: #ffffff;
+         text-decoration: none;
+         }
+         .site-footer a:hover, .site-footer a:focus {
+         text-decoration: none;
+         color: #ffffff;
+         border-color: transparent;
+         transition: border  0.4s ease;
+         }
+         .site-footer .newsletter, .site-footer .social-media{
+         padding-bottom: 20px;
+         }
+         .site-footer .form-textfield{
+         border: none;
+         background-color: #ffffff;
+         padding: 10px;
+         width: 60%;
+         font-size: 1.1em;
+         color: #000000;
+         border-radius: 0;
+         }
+         .site-footer .form-submit{
+         -webkit-appearance: none;
+         padding: 10px;
+         border: none;
+         background-color: #F27904;
+         color: black;
+         font-size: 1.1em;
+         border-radius: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Site Header -->
+      <header class="site-header container">
+         <div class="row">
+            <nav class="site-nav col-sm-6 col-sm-offset-6">
+               <ul class="nav-list">
+                  <li class="nav-item"><a href="/about">About</a></li>
+                  <li class="nav-item"><a href="https://itunes.apple.com/us/podcast/between-ourselves/id1231935673" target="_blank">Episodes</a></li>
+                  <li class="nav-item"><a href="mailto:betweenourselves@gmail.com">Contact</a></A></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- End Site Header -->
+      <!-- About Section  -->
+      <section class="site-about">
+         <div class="container">
+            <div class="row">
+               <div class="intro col-xs-8 col-sm-6 col-md-6">
+                  <h1>Between Ourselves</h1>
+                  {block:ShowDescription} {block:Description}
+                  <p class="blog-description">{Description}</p>
+                  {block:Description} {/block:ShowDescription}
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End About Section -->
+      <!-- Main Section  -->
+      <main class=" site-content container">
+         <div class="row">
+            {block:Posts}
+            <article class="site-article col-xs-12 col-sm-6 col-md-4">
+               <!-- Audio Post -->
+               {block:Audio}
+               <div class="type-audio post--content">
+                  {block:AudioEmbed} {AudioEmbed color="white"} {/block:AudioEmbed} {block:Caption}
+                  <div class="caption">
+                     {Caption}
+                  </div>
+                  {/block:Caption}
+               </div>
+               {/block:Audio}
+               <!-- Audio Post -->
+            </article>
+            <article class="col-xs-12">
+               <!-- Text Post -->
+               {block:Text}
+               <div class="type--text post--content">
+                  {block:Title}
+                  <h2 class="title">
+                     <a href="{Permalink}">{Title}</a>
+                  </h2>
+                  {/block:Title} {Body}
+               </div>
+               {/block:Text}
+               <!-- End Text Post -->
+            </article>
+            {/block:Posts}
+         </div>
+      </main>
+      <!-- End Main Section -->
+      <!-- Footer Section -->
+      <footer class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="newsletter col-xs-12 col-sm-4">
+                  <h3>Sign up</h3>
+                  <p>Sign up with your email address to receive news and updates.</p>
+                  <div class="newsletter-form">
+                     <form action="http://eepurl.com/clSctL" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate >
+                        <input type="email" name="firstname" placeholder="Email address" label="Email"  id="mce-EMAIL" class="form-item form-textfield"><input type="submit" value="Submit" id="mc-embedded-subscribe" class="form-submit">
+                     </form>
+                  </div>
+               </div>
+               <div class="social-media col-xs-12 col-sm-4">
+                  <h3>Stay updated</h3>
+                  <p>Get your regular dose of Between Ourselves by following the show on <a href="https://soundcloud.com/sekai-makoni-373776598">Soundcloud</a>, <a href="
+                     http://www.tumblr.com/follow/betweenourselvespod">Tumblr</a>, and <a href="https://itunes.apple.com/us/podcast/between-ourselves/id1231935673">iTunes</a>.</p>
+               </div>
+               <div class="intro col-xs-12 col-sm-4">
+                  <h3> Get in touch</h3>
+                  <p>Email your feedback and whatever else strikes your fancy to <a href="mailto:hello@betweenourselves.org">hello@betweenourselves.org</a>  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer Section -->
+   </body>
+</html>
